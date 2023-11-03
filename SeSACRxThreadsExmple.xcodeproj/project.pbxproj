@@ -30,6 +30,10 @@
 		041280782AF1D14000972552 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041280772AF1D14000972552 /* Resource.swift */; };
 		D641B1F02AF50B5A00FD9A39 /* ShopListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D641B1EF2AF50B5A00FD9A39 /* ShopListViewController.swift */; };
 		D641B1F22AF50BAE00FD9A39 /* ShopListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D641B1F12AF50BAE00FD9A39 /* ShopListView.swift */; };
+		D641B1F42AF556C000FD9A39 /* ShopListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D641B1F32AF556C000FD9A39 /* ShopListTableViewCell.swift */; };
+		D641B1F72AF55C1C00FD9A39 /* ReusableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D641B1F62AF55C1C00FD9A39 /* ReusableProtocol.swift */; };
+		D641B1F92AF55C8600FD9A39 /* ShopListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D641B1F82AF55C8600FD9A39 /* ShopListViewModel.swift */; };
+		D641B1FB2AF5612500FD9A39 /* ShopItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D641B1FA2AF5612500FD9A39 /* ShopItem.swift */; };
 		D6B4AD0B2AF26D77009D9364 /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B4AD0A2AF26D77009D9364 /* Extension+String.swift */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +79,10 @@
 		041280772AF1D14000972552 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		D641B1EF2AF50B5A00FD9A39 /* ShopListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopListViewController.swift; sourceTree = "<group>"; };
 		D641B1F12AF50BAE00FD9A39 /* ShopListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopListView.swift; sourceTree = "<group>"; };
+		D641B1F32AF556C000FD9A39 /* ShopListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopListTableViewCell.swift; sourceTree = "<group>"; };
+		D641B1F62AF55C1C00FD9A39 /* ReusableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableProtocol.swift; sourceTree = "<group>"; };
+		D641B1F82AF55C8600FD9A39 /* ShopListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopListViewModel.swift; sourceTree = "<group>"; };
+		D641B1FA2AF5612500FD9A39 /* ShopItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopItem.swift; sourceTree = "<group>"; };
 		D6B4AD0A2AF26D77009D9364 /* Extension+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,6 +137,7 @@
 		041280222AEF9BAB00972552 /* SeSACRxThreads */ = {
 			isa = PBXGroup;
 			children = (
+				D641B1F52AF55C0700FD9A39 /* Extension */,
 				D641B1ED2AF50B2100FD9A39 /* ShopList */,
 				041280532AEF9C1F00972552 /* SignUp */,
 				041280542AEF9C2600972552 /* SignIn */,
@@ -205,8 +214,19 @@
 			children = (
 				D641B1EF2AF50B5A00FD9A39 /* ShopListViewController.swift */,
 				D641B1F12AF50BAE00FD9A39 /* ShopListView.swift */,
+				D641B1F32AF556C000FD9A39 /* ShopListTableViewCell.swift */,
+				D641B1F82AF55C8600FD9A39 /* ShopListViewModel.swift */,
+				D641B1FA2AF5612500FD9A39 /* ShopItem.swift */,
 			);
 			path = ShopList;
+			sourceTree = "<group>";
+		};
+		D641B1F52AF55C0700FD9A39 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D641B1F62AF55C1C00FD9A39 /* ReusableProtocol.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,12 +370,15 @@
 			files = (
 				041280782AF1D14000972552 /* Resource.swift in Sources */,
 				0412806F2AEFAD2D00972552 /* BirthdayViewController.swift in Sources */,
+				D641B1FB2AF5612500FD9A39 /* ShopItem.swift in Sources */,
 				041280652AEFA2F000972552 /* SignTextField.swift in Sources */,
 				0412806C2AEFABFE00972552 /* PasswordViewController.swift in Sources */,
 				041280562AEFA04800972552 /* SignInViewController.swift in Sources */,
 				041280282AEF9BAB00972552 /* ViewController.swift in Sources */,
 				041280632AEFA0CE00972552 /* PointButton.swift in Sources */,
 				041280242AEF9BAB00972552 /* AppDelegate.swift in Sources */,
+				D641B1F72AF55C1C00FD9A39 /* ReusableProtocol.swift in Sources */,
+				D641B1F92AF55C8600FD9A39 /* ShopListViewModel.swift in Sources */,
 				D641B1F02AF50B5A00FD9A39 /* ShopListViewController.swift in Sources */,
 				D6B4AD0B2AF26D77009D9364 /* Extension+String.swift in Sources */,
 				041280732AEFAD4B00972552 /* NicknameViewController.swift in Sources */,
@@ -363,6 +386,7 @@
 				041280712AEFAD3D00972552 /* PhoneViewController.swift in Sources */,
 				041280262AEF9BAB00972552 /* SceneDelegate.swift in Sources */,
 				D641B1F22AF50BAE00FD9A39 /* ShopListView.swift in Sources */,
+				D641B1F42AF556C000FD9A39 /* ShopListTableViewCell.swift in Sources */,
 				041280582AEFA05300972552 /* SignInViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

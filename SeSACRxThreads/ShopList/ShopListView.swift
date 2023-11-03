@@ -69,6 +69,8 @@ class ShopListView: UIView {
     }
     private func setShopListTableView(){
         shopListTableView.backgroundColor = .systemBlue
+        shopListTableView.rowHeight = 60
+        shopListTableView.register(ShopListTableViewCell.self, forCellReuseIdentifier: ShopListTableViewCell.identifier)
         shopListTableView.snp.makeConstraints { make in
             make.top.equalTo(headerView.snp.bottom).offset(20)
             make.horizontalEdges.equalTo(self.safeAreaLayoutGuide).inset(10)
