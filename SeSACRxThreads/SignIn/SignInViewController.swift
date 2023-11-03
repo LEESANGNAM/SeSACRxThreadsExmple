@@ -7,6 +7,8 @@
 
 import UIKit
 import SnapKit
+import RxSwift
+import RxCocoa
 
 class SignInViewController: UIViewController {
 
@@ -15,6 +17,8 @@ class SignInViewController: UIViewController {
     let signInButton = PointButton(title: "로그인")
     let signUpButton = UIButton()
     
+    let disposebag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,8 +26,14 @@ class SignInViewController: UIViewController {
         
         configureLayout()
         configure()
-        
+        bind()
         signUpButton.addTarget(self, action: #selector(signUpButtonClicked), for: .touchUpInside)
+    }
+    func bind(){
+        signInButton.rx.tap
+            .subscribe(with: self) { owner, value in
+                owner.navigationController?.pushViewController(ShopListViewController(), animated: true)
+            }.disposed(by: disposebag)
     }
     
     @objc func signUpButtonClicked() {

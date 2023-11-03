@@ -28,6 +28,8 @@
 		041280712AEFAD3D00972552 /* PhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041280702AEFAD3D00972552 /* PhoneViewController.swift */; };
 		041280732AEFAD4B00972552 /* NicknameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041280722AEFAD4B00972552 /* NicknameViewController.swift */; };
 		041280782AF1D14000972552 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041280772AF1D14000972552 /* Resource.swift */; };
+		D641B1F02AF50B5A00FD9A39 /* ShopListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D641B1EF2AF50B5A00FD9A39 /* ShopListViewController.swift */; };
+		D641B1F22AF50BAE00FD9A39 /* ShopListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D641B1F12AF50BAE00FD9A39 /* ShopListView.swift */; };
 		D6B4AD0B2AF26D77009D9364 /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B4AD0A2AF26D77009D9364 /* Extension+String.swift */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +73,8 @@
 		041280702AEFAD3D00972552 /* PhoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneViewController.swift; sourceTree = "<group>"; };
 		041280722AEFAD4B00972552 /* NicknameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameViewController.swift; sourceTree = "<group>"; };
 		041280772AF1D14000972552 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		D641B1EF2AF50B5A00FD9A39 /* ShopListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopListViewController.swift; sourceTree = "<group>"; };
+		D641B1F12AF50BAE00FD9A39 /* ShopListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopListView.swift; sourceTree = "<group>"; };
 		D6B4AD0A2AF26D77009D9364 /* Extension+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,6 +129,7 @@
 		041280222AEF9BAB00972552 /* SeSACRxThreads */ = {
 			isa = PBXGroup;
 			children = (
+				D641B1ED2AF50B2100FD9A39 /* ShopList */,
 				041280532AEF9C1F00972552 /* SignUp */,
 				041280542AEF9C2600972552 /* SignIn */,
 				0412806D2AEFAD0F00972552 /* SignUpOptional */,
@@ -193,6 +198,15 @@
 				041280722AEFAD4B00972552 /* NicknameViewController.swift */,
 			);
 			path = SignUpOptional;
+			sourceTree = "<group>";
+		};
+		D641B1ED2AF50B2100FD9A39 /* ShopList */ = {
+			isa = PBXGroup;
+			children = (
+				D641B1EF2AF50B5A00FD9A39 /* ShopListViewController.swift */,
+				D641B1F12AF50BAE00FD9A39 /* ShopListView.swift */,
+			);
+			path = ShopList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,11 +356,13 @@
 				041280282AEF9BAB00972552 /* ViewController.swift in Sources */,
 				041280632AEFA0CE00972552 /* PointButton.swift in Sources */,
 				041280242AEF9BAB00972552 /* AppDelegate.swift in Sources */,
+				D641B1F02AF50B5A00FD9A39 /* ShopListViewController.swift in Sources */,
 				D6B4AD0B2AF26D77009D9364 /* Extension+String.swift in Sources */,
 				041280732AEFAD4B00972552 /* NicknameViewController.swift in Sources */,
 				0412806A2AEFA91E00972552 /* SignUpViewController.swift in Sources */,
 				041280712AEFAD3D00972552 /* PhoneViewController.swift in Sources */,
 				041280262AEF9BAB00972552 /* SceneDelegate.swift in Sources */,
+				D641B1F22AF50BAE00FD9A39 /* ShopListView.swift in Sources */,
 				041280582AEFA05300972552 /* SignInViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

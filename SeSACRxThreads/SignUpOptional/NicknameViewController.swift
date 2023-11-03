@@ -35,7 +35,7 @@ class NicknameViewController: UIViewController {
             .subscribe(with: self) { owner, text in
                 let removeSpaceText = text.trimmingCharacters(in: .whitespacesAndNewlines)
                 owner.nicknameText.onNext(removeSpaceText) // 2. 텍스트필드값을 방출 ->
-            }
+            }.disposed(by: disposebag)
         // 3. 여기서 방출받은값 받아서
         // 텍스트를 검사하고 bool 값으로 변경해서
         nicknameText.map { self.nicknameVaild(text: $0) }
