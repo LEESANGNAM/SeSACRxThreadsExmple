@@ -10,11 +10,26 @@ import RxSwift
 
 class ShopListViewModel {
     
-    var shopListData = ["tt","aa","bb","cc","dd","ee","qq","ee","rr","tt","aa"]
+    var shopListData:[shopItem] = []
     
     lazy var shopList = BehaviorSubject(value: shopListData)
     
     
+    func appendshopItemData(title: String){
+        let item = shopItem(title: title)
+        shopListData.append(item)
+    }
     
+    func toggleCheck(index: Int) {
+        let updatedItems = shopListData
+        updatedItems[index].ischecked.toggle()
+        shopList.onNext(updatedItems)
+    }
+    
+    func toggleStar(index: Int) {
+        let updatedItems = shopListData
+        updatedItems[index].isStar.toggle()
+        shopList.onNext(updatedItems)
+    }
     
 }
